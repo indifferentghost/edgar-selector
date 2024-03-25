@@ -12,7 +12,7 @@ export default function Home() {
       <KeyBuilder saveKey={saveKey} />
       <ul>
         {savedKeys.map((v) => (
-          <li>{v}</li>
+          <li key={v}>{v}</li>
         ))}
       </ul>
     </main>

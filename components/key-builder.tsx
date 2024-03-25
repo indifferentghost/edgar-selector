@@ -77,7 +77,7 @@ const SelectedValues = () => {
   return (
     <>
       {keys.map((value, index) => (
-        <div className="relative group">
+        <div key={`selected_${value}`} className="relative group">
           <Input disabled value={value} />
           <button
             onClick={() => resetTo(index)}
